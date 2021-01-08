@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5716904E65CF9E40B2F17592 /* Pods_MyBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159626A607A67DF4C428CF2E /* Pods_MyBooks.framework */; };
 		EB2D193125A91913007B7ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D193025A91913007B7ADB /* AppDelegate.swift */; };
 		EB2D193325A91913007B7ADB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D193225A91913007B7ADB /* SceneDelegate.swift */; };
-		EB2D193525A91913007B7ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D193425A91913007B7ADB /* ViewController.swift */; };
 		EB2D193825A91913007B7ADB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D193625A91913007B7ADB /* Main.storyboard */; };
 		EB2D193A25A91915007B7ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2D193925A91915007B7ADB /* Assets.xcassets */; };
 		EB2D193D25A91915007B7ADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D193B25A91915007B7ADB /* LaunchScreen.storyboard */; };
+		EB2D198725A91ED8007B7ADB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D198625A91ED8007B7ADB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		159626A607A67DF4C428CF2E /* Pods_MyBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		216CF69203F6257628092F60 /* Pods-MyBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBooks.debug.xcconfig"; path = "Target Support Files/Pods-MyBooks/Pods-MyBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		9229284F12A9B3706A3DD0A5 /* Pods-MyBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBooks.release.xcconfig"; path = "Target Support Files/Pods-MyBooks/Pods-MyBooks.release.xcconfig"; sourceTree = "<group>"; };
 		EB2D192D25A91913007B7ADB /* MyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D193025A91913007B7ADB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2D193225A91913007B7ADB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB2D193425A91913007B7ADB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB2D193725A91913007B7ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB2D193925A91915007B7ADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2D193C25A91915007B7ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2D193E25A91915007B7ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2D198625A91ED8007B7ADB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5716904E65CF9E40B2F17592 /* Pods_MyBooks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D2CE7B12B2DFF97B6F53B1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				159626A607A67DF4C428CF2E /* Pods_MyBooks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A55D870DA5C6C9FF65EDD2DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				216CF69203F6257628092F60 /* Pods-MyBooks.debug.xcconfig */,
+				9229284F12A9B3706A3DD0A5 /* Pods-MyBooks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EB2D192425A91913007B7ADB = {
 			isa = PBXGroup;
 			children = (
 				EB2D192F25A91913007B7ADB /* MyBooks */,
 				EB2D192E25A91913007B7ADB /* Products */,
+				A55D870DA5C6C9FF65EDD2DB /* Pods */,
+				8D2CE7B12B2DFF97B6F53B1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,135 @@
 		EB2D192F25A91913007B7ADB /* MyBooks */ = {
 			isa = PBXGroup;
 			children = (
-				EB2D193025A91913007B7ADB /* AppDelegate.swift */,
-				EB2D193225A91913007B7ADB /* SceneDelegate.swift */,
-				EB2D193425A91913007B7ADB /* ViewController.swift */,
-				EB2D193625A91913007B7ADB /* Main.storyboard */,
-				EB2D193925A91915007B7ADB /* Assets.xcassets */,
-				EB2D193B25A91915007B7ADB /* LaunchScreen.storyboard */,
+				EB2D194E25A919FE007B7ADB /* Network */,
+				EB2D194A25A919C6007B7ADB /* Application */,
+				EB2D195025A91A38007B7ADB /* Features */,
+				EB2D194F25A91A14007B7ADB /* Resource */,
 				EB2D193E25A91915007B7ADB /* Info.plist */,
 			);
 			path = MyBooks;
+			sourceTree = "<group>";
+		};
+		EB2D194725A91999007B7ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D194825A919A4007B7ADB /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2D194825A919A4007B7ADB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D193625A91913007B7ADB /* Main.storyboard */,
+				EB2D193B25A91915007B7ADB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EB2D194A25A919C6007B7ADB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D193025A91913007B7ADB /* AppDelegate.swift */,
+				EB2D193225A91913007B7ADB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EB2D194D25A919E8007B7ADB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB2D194E25A919FE007B7ADB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EB2D194F25A91A14007B7ADB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D193925A91915007B7ADB /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EB2D195025A91A38007B7ADB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D195125A91A47007B7ADB /* Core */,
+				EB2D195225A91A4F007B7ADB /* Book */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EB2D195125A91A47007B7ADB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D194D25A919E8007B7ADB /* Model */,
+				EB2D194725A91999007B7ADB /* View */,
+				EB2D197D25A91DF3007B7ADB /* ViewModel */,
+				EB2D198425A91E6A007B7ADB /* Controller */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EB2D195225A91A4F007B7ADB /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D198025A91E34007B7ADB /* Model */,
+				EB2D198125A91E3A007B7ADB /* View */,
+				EB2D197F25A91E2C007B7ADB /* ViewModel */,
+				EB2D198525A91E87007B7ADB /* Controller */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		EB2D197D25A91DF3007B7ADB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB2D197F25A91E2C007B7ADB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB2D198025A91E34007B7ADB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB2D198125A91E3A007B7ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2D198425A91E6A007B7ADB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D198625A91ED8007B7ADB /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB2D198525A91E87007B7ADB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB2D194125A91915007B7ADB /* Build configuration list for PBXNativeTarget "MyBooks" */;
 			buildPhases = (
+				645B695BE18AE7DD7BD487F6 /* [CP] Check Pods Manifest.lock */,
 				EB2D192925A91913007B7ADB /* Sources */,
 				EB2D192A25A91913007B7ADB /* Frameworks */,
 				EB2D192B25A91913007B7ADB /* Resources */,
+				6560D57D89CD11C708A767FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +278,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		645B695BE18AE7DD7BD487F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBooks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6560D57D89CD11C708A767FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBooks/Pods-MyBooks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBooks/Pods-MyBooks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBooks/Pods-MyBooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB2D192925A91913007B7ADB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2D193525A91913007B7ADB /* ViewController.swift in Sources */,
+				EB2D198725A91ED8007B7ADB /* LoginViewController.swift in Sources */,
 				EB2D193125A91913007B7ADB /* AppDelegate.swift in Sources */,
 				EB2D193325A91913007B7ADB /* SceneDelegate.swift in Sources */,
 			);
@@ -283,12 +471,14 @@
 		};
 		EB2D194225A91915007B7ADB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216CF69203F6257628092F60 /* Pods-MyBooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46X9JWL5UU;
 				INFOPLIST_FILE = MyBooks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +486,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.defauloper.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EB2D194325A91915007B7ADB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9229284F12A9B3706A3DD0A5 /* Pods-MyBooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46X9JWL5UU;
 				INFOPLIST_FILE = MyBooks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.defauloper.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
