@@ -59,6 +59,9 @@
                                         <state key="normal" title="Logout">
                                             <color key="titleColor" name="PrimaryButtonFont"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logoutTapped:" destination="r5l-pb-5oE" eventType="touchUpInside" id="pSU-dE-WTU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -75,6 +78,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="sLa-EH-V93"/>
+                    <connections>
+                        <outlet property="fullnameLabel" destination="NgK-6n-aEz" id="oYx-iL-iXV"/>
+                        <outlet property="logoutButton" destination="dhl-RV-DCF" id="Rgq-vI-IMd"/>
+                        <outlet property="usernameLabel" destination="JHc-e3-h0X" id="Gol-jJ-QwP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8H-ff-Pmv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

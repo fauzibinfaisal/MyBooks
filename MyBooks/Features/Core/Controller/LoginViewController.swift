@@ -16,7 +16,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var SiginButton: UIButton!
     
     let viewModel = LoginViewModel()
-    let preferences = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()

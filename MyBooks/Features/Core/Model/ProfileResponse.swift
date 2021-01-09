@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - ProfileResponse
 struct ProfileResponse: Codable {
-    var data: DataClass?
+    var data: DataClass
     var profileResponseDescription: String?
     var statusCode: Int?
 
@@ -22,7 +22,7 @@ struct ProfileResponse: Codable {
     // MARK: - DataClass
     struct DataClass: Codable {
         var active: Bool?
-        var fullname, id, username: String?
+        var fullname, id, username: String
     }
 }
 

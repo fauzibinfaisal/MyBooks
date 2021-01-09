@@ -104,13 +104,14 @@ extension APIClient {
             let result = response.result
             switch result {
             case .success( _):
-                if let dataResponse = try? JSONDecoder().decode(ErrorResponse.self, from: response.data!){
+                
+                if let dataResponse = try? JSONDecoder().decode(ProfileResponse?.self, from: response.data!){
+                print("Sudah di parsing postSelect")
+                completion( dataResponse, nil)
+                    
+                } else if let dataResponse = try? JSONDecoder().decode(ErrorResponse.self, from: response.data!){
 
                     completion(nil, dataResponse.errorResponseDescription)
-
-                } else if let dataResponse = try? JSONDecoder().decode(ProfileResponse?.self, from: response.data!){
-                    print("Sudah di parsing postSelect")
-                    completion( dataResponse, nil)
 
                 } else {
                     completion(nil, "Terjadi Kesalahan Pada Server")

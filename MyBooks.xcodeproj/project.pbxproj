@@ -41,6 +41,7 @@
 		EBC9C0C225A95D2500CF7A97 /* AddBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC9C0C025A95D2500CF7A97 /* AddBookViewController.xib */; };
 		EBC9C0C725A964FD00CF7A97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0C625A964FD00CF7A97 /* Constants.swift */; };
 		EBC9C0CA25A980D200CF7A97 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0C925A980D200CF7A97 /* ProfileResponse.swift */; };
+		EBC9C0CD25A98C1A00CF7A97 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0CC25A98C1A00CF7A97 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		EBC9C0C025A95D2500CF7A97 /* AddBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBookViewController.xib; sourceTree = "<group>"; };
 		EBC9C0C625A964FD00CF7A97 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EBC9C0C925A980D200CF7A97 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
+		EBC9C0CC25A98C1A00CF7A97 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2A687C25A9403F00E81FC2 /* LoginViewModel.swift */,
+				EBC9C0CC25A98C1A00CF7A97 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				EB2A689325A941F800E81FC2 /* ViewControllerExtension.swift in Sources */,
 				EB2A688D25A941D600E81FC2 /* DateExtension.swift in Sources */,
 				EBC9C0B525A9566E00CF7A97 /* BooksResponse.swift in Sources */,
+				EBC9C0CD25A98C1A00CF7A97 /* ProfileViewModel.swift in Sources */,
 				EB2D193125A91913007B7ADB /* AppDelegate.swift in Sources */,
 				EB2D19B625A92F98007B7ADB /* APIClientProtocol.swift in Sources */,
 				EB2A68C425A9524800E81FC2 /* BooksViewController.swift in Sources */,
