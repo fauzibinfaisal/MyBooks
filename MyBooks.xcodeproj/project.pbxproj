@@ -43,6 +43,7 @@
 		EBC9C0CA25A980D200CF7A97 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0C925A980D200CF7A97 /* ProfileResponse.swift */; };
 		EBC9C0CD25A98C1A00CF7A97 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0CC25A98C1A00CF7A97 /* ProfileViewModel.swift */; };
 		EBC9C0D925AA11A500CF7A97 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0D825AA11A500CF7A97 /* BookViewModel.swift */; };
+		EBC9C0DC25AA160000CF7A97 /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0DB25AA160000CF7A97 /* LogoutResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		EBC9C0C925A980D200CF7A97 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
 		EBC9C0CC25A98C1A00CF7A97 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EBC9C0D825AA11A500CF7A97 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		EBC9C0DB25AA160000CF7A97 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			children = (
 				EB2D19A425A92BEC007B7ADB /* LoginResponse.swift */,
 				EBC9C0C925A980D200CF7A97 /* ProfileResponse.swift */,
+				EBC9C0DB25AA160000CF7A97 /* LogoutResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				EBC9C0C725A964FD00CF7A97 /* Constants.swift in Sources */,
 				EB2A689025A941E500E81FC2 /* UIExtension.swift in Sources */,
 				EB2A689325A941F800E81FC2 /* ViewControllerExtension.swift in Sources */,
+				EBC9C0DC25AA160000CF7A97 /* LogoutResponse.swift in Sources */,
 				EB2A688D25A941D600E81FC2 /* DateExtension.swift in Sources */,
 				EBC9C0B525A9566E00CF7A97 /* BooksResponse.swift in Sources */,
 				EBC9C0CD25A98C1A00CF7A97 /* ProfileViewModel.swift in Sources */,

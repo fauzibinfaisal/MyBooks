@@ -90,6 +90,56 @@ extension APIClient {
         })
     }
     
+    func logout( completion:@escaping (LogoutResponse?, String?) -> Void) {
+        let token: String = UserDefaults.standard.string(forKey: Constants.PreferenceKeys.Token) ?? ""
+        let params = [APIParams.token: token]
+        let request = AF.request(BaseAPI.Logout,
+                                 method: .get,
+                                 parameters: params as Parameters,
+                                 headers: getHTTPHeaders(method: .get))
+        
+        request.responseJSON(completionHandler: { response in
+            print("postLogin response: \(response)")
+            let result = response.result
+            switch result {
+            case .success( _):
+                
+                if let dataResponse = try? JSONDecoder().decode(LogoutResponse?.self, from: response.data!){
+                print("Sudah di parsing postSelect")
+                completion( dataResponse, nil)
+                    
+                } else if let dataResponse = try? JSONDecoder().decode(ErrorResponse.self, from: response.data!){
+
+                    completion(nil, dataResponse.errorResponseDescription)
+
+                } else {
+                    completion(nil, "Terjadi Kesalahan Pada Server")
+                }
+
+            // Do something with value
+            case .failure(let error):
+                if let underlyingError = error.underlyingError {
+                    if let urlError = underlyingError as? URLError {
+                        switch urlError.code {
+                        case .timedOut:
+                            completion(nil, "Timed out error")
+                            print("Timed out error")
+                        case .notConnectedToInternet:
+                            completion(nil, "Not connected")
+                        default:
+                            //Do something
+                            completion(nil, error.errorDescription)
+                        }
+                    } else {
+                        completion(nil, "Unknown error")
+                    }
+                } else {
+                    completion(nil, "Unknown error")
+                }
+            }
+        })
+    }
+    
     
     func getProfile( completion:@escaping (ProfileResponse?, String?) -> Void) {
         let token: String = UserDefaults.standard.string(forKey: Constants.PreferenceKeys.Token) ?? ""
