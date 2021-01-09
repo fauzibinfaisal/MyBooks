@@ -42,6 +42,7 @@
 		EBC9C0C725A964FD00CF7A97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0C625A964FD00CF7A97 /* Constants.swift */; };
 		EBC9C0CA25A980D200CF7A97 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0C925A980D200CF7A97 /* ProfileResponse.swift */; };
 		EBC9C0CD25A98C1A00CF7A97 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0CC25A98C1A00CF7A97 /* ProfileViewModel.swift */; };
+		EBC9C0D925AA11A500CF7A97 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9C0D825AA11A500CF7A97 /* BookViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		EBC9C0C625A964FD00CF7A97 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EBC9C0C925A980D200CF7A97 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
 		EBC9C0CC25A98C1A00CF7A97 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		EBC9C0D825AA11A500CF7A97 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 		EB2D197F25A91E2C007B7ADB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EBC9C0D825AA11A500CF7A97 /* BookViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				EBC9C0BB25A957DC00CF7A97 /* BooksCollectionViewCell.swift in Sources */,
 				EB2A68A225A942EB00E81FC2 /* LanguageConfig.swift in Sources */,
 				EB2D19A525A92BEC007B7ADB /* LoginResponse.swift in Sources */,
+				EBC9C0D925AA11A500CF7A97 /* BookViewModel.swift in Sources */,
 				EB2A68C825A9527A00E81FC2 /* BookDetailViewController.swift in Sources */,
 				EB2A687D25A9403F00E81FC2 /* LoginViewModel.swift in Sources */,
 				EB2A688925A941C800E81FC2 /* StringExtension.swift in Sources */,

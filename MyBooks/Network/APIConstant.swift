@@ -10,6 +10,7 @@ import Foundation
 struct BaseAPI {
     static let Root = "http://apitesting.incenplus.com"
     static let User = Root+"/users"
+    static let Book = Root+"/books"
     static let Login = User+"/login"
     static let Profile = User+"/me"
 }

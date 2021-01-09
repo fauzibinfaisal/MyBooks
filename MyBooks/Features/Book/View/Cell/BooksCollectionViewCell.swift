@@ -10,9 +10,11 @@ import UIKit
 class BooksCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var imageLagel: UIImageView!
     
     var bookName: String?
+    var bookDescription: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +25,7 @@ class BooksCollectionViewCell: UICollectionViewCell {
     func setupView(){
         if let bookName = bookName{
             nameLabel.text = bookName
+            descriptionLabel.text = bookDescription
         }
     }
 
