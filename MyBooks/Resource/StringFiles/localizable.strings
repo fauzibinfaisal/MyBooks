@@ -1,0 +1,13 @@
+/* 
+  localizable.strings
+  MyBooks
+
+  Created by Fauzi Fauzi on 09/01/21.
+  
+*/
+
+"Success.Alert.Title" = "Success";
+"Success.Message.Login" = "Sign in success";
+"Error.Alert.Title" = "Error";
+"Required.Message.username" = "Username is reqired!";
+"Required.Message.password" = "Password is reqired!";

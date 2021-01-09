@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (5.0.5)
+  - AlamofireObjectMapper (6.0.0):
+    - Alamofire (~> 5.0.0-beta.2)
+    - ObjectMapper (~> 3.4)
+  - IQKeyboardManagerSwift (6.5.6)
+  - MKProgress (1.2.0)
+  - ObjectMapper (3.5.3)
+  - SwiftKeychainWrapper (4.0.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - IQKeyboardManagerSwift
+  - MKProgress (from `https://github.com/kamirana4/MKProgress.git`)
+  - SwiftKeychainWrapper
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - IQKeyboardManagerSwift
+    - ObjectMapper
+    - SwiftKeychainWrapper
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  MKProgress:
+    :git: https://github.com/kamirana4/MKProgress.git
+
+CHECKOUT OPTIONS:
+  MKProgress:
+    :commit: 489a826b63481b287134eb1d2278060bb9db8e6d
+    :git: https://github.com/kamirana4/MKProgress.git
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  AlamofireObjectMapper: 8cf0e01a1b36b485877033f8f6aa733977488da3
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  MKProgress: 76c0ba758cca1415aa63aa94d0856467c2d632e3
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 00ccb14168267ff21f23dec2a2264d7160543eeb
+
+COCOAPODS: 1.8.4
