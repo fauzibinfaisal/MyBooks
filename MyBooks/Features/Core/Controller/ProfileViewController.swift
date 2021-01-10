@@ -49,6 +49,9 @@ class ProfileViewController: UIViewController {
         self.viewModel.showAlert = { success, fullname, username, message in
             self.handleAlert(fullname: fullname, username: username, success: success)
         }
+        self.viewModel.callbackLogout = { success, message in
+            self.handleLogout(success: success, message: message)
+        }
     }
     
     func setupData(){
@@ -56,7 +59,7 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
-        
+        self.viewModel.Logout()
     }
     
     func handleAlert(fullname:String, username:String, success:Bool) {
@@ -64,6 +67,14 @@ class ProfileViewController: UIViewController {
             fullnameLabel.text = fullname
             usernameLabel.text = username
             self.view.layoutIfNeeded()
+        } else {
+            print("failed fetch")
+        }
+    }
+    
+    func handleLogout(success:Bool ,message:String) {
+        if success {
+            self.navigationController?.popViewController(animated: true)
         } else {
             print("failed fetch")
         }

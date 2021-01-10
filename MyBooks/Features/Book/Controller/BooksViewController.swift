@@ -10,7 +10,6 @@ import UIKit
 class BooksViewController: UIViewController {
     
     @IBOutlet weak var bookCollectionView: UICollectionView!
-    
     var bookList = [BooksResponse.Book]()
     let booksViewModel = BookViewModel()
     
@@ -90,7 +89,6 @@ extension BooksViewController: UICollectionViewDataSource, UICollectionViewDeleg
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let width = collectionView.frame.size.width / 2
-            print("width2 \(width)")
             return CGSize(width: width - 10, height: width + CGFloat(50))
     }
     
@@ -98,9 +96,11 @@ extension BooksViewController: UICollectionViewDataSource, UICollectionViewDeleg
         switch indexPath.row {
         case 1:
             let vc = BookDetailViewController(nibName: "BookDetailViewController", bundle: nil)
+            vc.id = bookList[indexPath.row].id
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             let vc = BookDetailViewController(nibName: "BookDetailViewController", bundle: nil)
+            vc.id = bookList[indexPath.row].id
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

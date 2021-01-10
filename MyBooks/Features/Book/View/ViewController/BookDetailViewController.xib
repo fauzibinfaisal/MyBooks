@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookDetailViewController" customModule="MyBooks" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="8zz-hb-FBH" id="We0-5P-OAu"/>
+                <outlet property="edtiButton" destination="azg-DW-uWb" id="emi-Hx-RvK"/>
+                <outlet property="nameLabel" destination="hEd-PL-AGx" id="kfv-Dc-8UN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymV-hf-0ZE">
-                    <rect key="frame" x="0.0" y="44" width="414" height="241.5"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="216.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uoZ-dI-zNy">
                             <rect key="frame" x="0.0" y="25" width="414" height="191.5"/>
@@ -70,7 +73,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="uoZ-dI-zNy" secondAttribute="bottom" constant="25" id="AFQ-Eh-71c"/>
+                        <constraint firstAttribute="bottom" secondItem="uoZ-dI-zNy" secondAttribute="bottom" id="AFQ-Eh-71c"/>
                         <constraint firstItem="uoZ-dI-zNy" firstAttribute="leading" secondItem="ymV-hf-0ZE" secondAttribute="leading" id="K3x-Rb-JSP"/>
                         <constraint firstAttribute="trailing" secondItem="uoZ-dI-zNy" secondAttribute="trailing" id="NT7-EJ-p7l"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="f5x-xT-J0q"/>

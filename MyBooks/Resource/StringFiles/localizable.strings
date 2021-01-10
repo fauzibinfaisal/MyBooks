@@ -11,3 +11,4 @@
 "Error.Alert.Title" = "Error";
 "Required.Message.username" = "Username is reqired!";
 "Required.Message.password" = "Password is reqired!";
+"Required.Message.id" = "Id is reqired!";
